@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.user.projecthem.LoginActivity"
+    >
+
+    <ImageView
+        android:id="@+id/HEMLOGO"
+        android:layout_width="wrap_content"
+        android:layout_height="209dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/ic_chat_bubble_black_24dp" />
+
+    <TextView
+        android:id="@+id/textHEM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="Hannam Event Mate"
+        android:textSize="15dp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/EditId"
+        android:hint="아이디"
+        android:inputType="text"
+        android:textColor="@color/colorAccent"
+        android:drawableStart="@drawable/ic_person_black_24dp"
+        android:drawableLeft="@drawable/ic_person_black_24dp"/>
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/EditPassword"
+        android:hint="비밀번호"
+        android:inputType="textPassword"
+        android:textColor="@color/colorAccent"
+        android:drawableStart="@drawable/ic_lock_outline_black_24dp"
+        android:drawableLeft="@drawable/ic_lock_outline_black_24dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/BtnLogin"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:text="로그인"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/textJoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="회원가입"
+            android:textColor="@color/colorAccent" />/>
+
+    </LinearLayout>
+
+</LinearLayout>
